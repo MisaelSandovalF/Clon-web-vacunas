@@ -1,0 +1,749 @@
+* {
+  box-sizing: border-box;
+  margin: auto auto;
+}
+
+@font-face {
+  font-family: "Patua One";
+  src: url("font/PatuaOne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html,
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 25px;
+  height: 100%;
+  min-height: 100vh;
+  
+  font-family: "Patua One", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+  background-color: white;
+}
+header {
+  z-index: 1;
+}
+/*****************************
+         HEADER, NAV 
+******************************/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+  z-index: 1;
+  background-color: white;
+  filter: blur();
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li > a {
+  display: block;
+  position: relative;
+  padding: 20px 30px 10px 15px;
+  text-decoration: none;
+  text-shadow: 1px 1px whitesmoke;
+  color: gray;
+}
+
+.titulo {
+  padding: 0px 300px 1px 120px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  color: rgb(83, 83, 247);
+}
+.btnAprendemas {
+  padding: 10px 40px 10px 40px;
+  margin: 50px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  color: whitesmoke;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.466);
+  background-color: rgb(60, 60, 184);
+}
+
+/*****************************
+            BODY
+******************************/
+
+#contenedor {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  justify-content: space-between;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+#contenedor > div {
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.bannerDoctora {
+  position: absolute;
+  right: 0%;
+  top: 5px;
+  width: 950px;
+  height: 750px;
+  z-index: 3;
+}
+
+.bannerDoctora img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+}
+
+
+.txtTitulo {
+  position: absolute;
+  text-align: left;
+  width: 550px;
+
+  top: 100px;
+  left: 270px;
+}
+.txtTitulo h1 {
+  color: rgb(25, 25, 175);
+  font-size: 60px;
+}
+.txtResumen {
+  position: absolute;
+  text-align: left;
+  width: 450px;
+
+  top: 300px;
+  left: 270px;
+}
+
+.txtResumen p {
+  font-size: 20px;
+  line-height: 2;
+  color: gray;
+}
+
+.boxsIcons {
+  position: absolute;
+  text-align: left;
+  width: 450px;
+  top: 450px;
+  left: 270px;
+  
+}
+.item{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+span{
+ font-size: 18px;
+ padding: 0px 15px 0px 25px;
+}
+
+.boxsDates {
+    position: absolute;
+    text-align: left;
+    width: 450px;
+    top: 550px;
+    left: 270px;
+}
+
+.boxHorario{
+    position: absolute;
+    justify-content: center;
+    width: 1000px;
+    height: 110px;
+    top: 610px;
+    left: 270px;
+    z-index: 5;
+    
+    box-shadow: 5px 8px 30px 5px rgba(15, 15, 15, 0.199);
+    
+    background-color: rgba(255, 255, 255, 0.849);
+    
+}
+
+.boxHorario > div{
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+ 
+}
+table{
+    display: block;
+    
+    
+    width: 100%;
+    height: 100%;
+  
+    
+}
+#txtTabla{
+    font-size: 25px;
+    padding: 0px 15px 0px 15px;
+    font-family: "Patua One", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: gray;
+}
+
+
+table td {
+  
+  width: 250px;
+  text-align: left;
+ 
+}
+table td > p{
+  padding: 0px 0px 0px 55px ;
+  color: rgb(16, 16, 100);
+
+}
+
+.btnSolicitar {
+  padding: 10px 40px 10px 40px;
+  margin: 50px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  color: whitesmoke;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.466);
+  background-color: rgb(60, 60, 184);
+}
+
+#bannerVacunas{
+  position: relative;
+ 
+  width: 1280px;
+  height: 250px;
+  top: 720px;
+  padding: 1em;
+  margin-left: 210px;
+}
+.bannerVacunas{
+  width: 1550px;
+  height: 100%;
+  
+  object-fit: cover;
+  
+}
+
+.txtTitulo2 {
+  position: absolute;
+  text-align: left;
+  width: 550px;
+
+  top: 1000px;
+  left: 270px;
+}
+.txtTitulo2 h1 {
+  color: rgb(25, 25, 175);
+  font-size: 40px;
+}
+.txtResumen2 {
+  position: absolute;
+  text-align: left;
+  width: 450px;
+
+  top: 1100px;
+  left: 270px;
+}
+
+.txtResumen2 p {
+  font-size: 20px;
+  line-height: 2;
+  color: gray;
+}
+
+#bannerBeneficios{
+  position: absolute;
+  text-align: left;
+  top: 1300px;
+  left: 260px;
+  width: 80%;
+  
+  
+}
+
+#bannerBeneficios > div {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.beneficio1{
+  border: solid 3px whitesmoke;
+  width: 250px;
+  height: 270px;
+  float: left;
+  padding: 0.5em;
+  background-color: white;
+  box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.082);
+}
+
+.txtBeneficiosTitulo{
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(24, 24, 110);
+}
+.txtBeneficios{
+  padding: 20px 0px 0px 0px;
+  font-size: 15px;
+  color: grey;
+}
+
+
+.txtTitulo3 {
+  position: absolute;
+  text-align: left;
+  width: 550px;
+
+  top: 1810px;
+  left: 990px;
+}
+.txtTitulo3 h1 {
+  color: rgb(25, 25, 175);
+  font-size: 40px;
+}
+.txtResumen3 {
+  position: absolute;
+  text-align: left;
+  width: 550px;
+
+  top: 1910px;
+  left: 1000px;
+}
+
+.txtResumen3 p {
+  font-size: 20px;
+  line-height: 2;
+  color: gray;
+}
+
+
+.bannerDoctora2 {
+  position: absolute;
+  left: 0%;
+  top: 2085px;
+  width: 850px;
+  height: 750px;
+  z-index: 3;
+}
+
+.bannerDoctora2 img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+}
+
+
+
+#bannerRequisitos{
+  position: absolute;
+ 
+  text-align: left;
+  top: 2100px;
+  left: 950px;
+  width: 80%;
+
+}
+#bannerRequisitos > div {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.requisitos1{
+  
+  border: solid 3px whitesmoke;
+  width: 650px;
+  height: 110px;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: white;
+  box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.082);
+}
+
+.requisitos1 > div{
+ 
+ 
+  margin: 22px 0px 10px 25px;
+}
+
+
+
+.txtBeneficiosTitulo2{
+  padding: 0px 235px 0px 20px;
+  font-size: 20px;
+  color: rgb(24, 24, 110);
+}
+.txtBeneficiosTitulo21{
+  padding: 0px 360px 0px 20px;
+  font-size: 20px;
+  color: rgb(24, 24, 110);
+}
+.txtBeneficiosTitulo22{
+  padding: 0px 310px 0px 20px;
+  font-size: 20px;
+  color: rgb(24, 24, 110);
+}
+.txtBeneficiosTitulo23{
+  padding: 0px 310px 0px 20px;
+  font-size: 20px;
+  color: rgb(24, 24, 110);
+}
+
+.txtTitulo4 {
+  position: absolute;
+  
+  text-align: left;
+  width: 550px;
+
+  top: 3010px;
+  left: 200px;
+  
+}
+.txtTitulo4 h1 {
+  color: rgb(25, 25, 175);
+  font-size: 40px;
+}
+.txtResumen4 {
+  position: absolute;
+  text-align: left;
+  width: 500px;
+
+  top: 3110px;
+  left: 200px;
+}
+
+.txtResumen4 p {
+  font-size: 20px;
+  line-height: 2;
+  color: gray;
+}
+
+.bannerDoctora3 {
+  position: absolute;
+  right: 0%;
+  top: 3285px;
+  width: 850px;
+  height: 750px;
+  z-index: 3;
+}
+
+.bannerDoctora3 img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+}
+
+#bannerContact{
+  position: absolute;
+  display: flex;
+  text-align: left;
+  top: 3350px;
+  left: 200px;
+  width: 80%;
+  
+  
+}
+
+#bannerContact > div {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.contact1{
+  border: solid 3px whitesmoke;
+  width: 250px;
+  height: 250px;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: white;
+  box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.082);
+}
+
+#bannerContact2{
+  position: absolute;
+  display: flex;
+  text-align: left;
+  top: 3650px;
+  left: 200px;
+  width: 80%;
+  
+  
+}
+
+#bannerContact2 > div {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.contact2{
+  border: solid 3px whitesmoke;
+  width: 250px;
+  height: 250px;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: white;
+  box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.082);
+}
+
+.conficons{
+  padding: 10px 0px 10px 10px;
+}
+.confitxt {
+  padding: 1em;
+ 
+}
+
+
+.txtContactTitulo{
+ padding: 0px 0px 0px 0px;
+ color: rgb(56, 56, 153);
+}
+.txtContact{
+  padding: 0px 0px 0px 5px;
+  font-size: 12px;
+  color: rgb(56, 56, 153);
+ }
+
+
+
+ .btncontact {
+   text-align: center;
+  padding: 0px 15px 0px 15px;
+  margin: auto;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  color: whitesmoke;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.466);
+  background-color: rgb(60, 60, 184);
+}
+
+
+#footer{
+  
+  position: absolute;
+  background-color: red;
+  padding: 1em 0;
+  width: 100%;
+  height: 350px;
+  top: 4100px;
+  left: 0px;
+  background-color: aliceblue;
+  padding: 1em;
+  
+}
+
+#footer > div {
+  padding: 1em;
+ 
+  height: 100%;
+}
+.lema{
+  position: absolute;
+  width:  150px;
+  height: 250px;
+  
+}
+.tituloFooter{
+  text-align: center;
+ color: blue;
+}
+.txtFooter{
+ text-align: center;
+  font-size: 15px;
+  line-height: 1;
+  color: grey;
+}
+
+.derechos{
+  position: absolute;
+  color: gray;
+  padding: 1em 0;
+  top: 200px;
+  width: 550px;
+  height: 50px;
+  font-size: 20px;
+}
+
+
+.about{
+  position: absolute;
+  top: 50px;
+  left: 1000px;
+  width: 550px;
+}
+
+.company{
+  position: absolute;
+  top: 50px;
+  left: 1300px;
+  width: 550px;
+}
+
+.supor{
+  position: absolute;
+  top: 50px;
+  left: 1620px;
+  width: 550px;
+}
+
+.titu{
+  color: rgb(15, 15, 92);
+}
+.norm{
+  color: gray;
+}
+/************
+    Fijuras
+*************/
+.fondo {
+  position: absolute;
+  left: 954px;
+  width: 950px;
+  height: 150px;
+
+  filter: saturate(900%) blur(10px);
+  background-color: rgba(201, 208, 216, 0.788);
+}
+#figura1 {
+  position: absolute;
+  left: 180px;
+}
+#figura2 {
+  position: absolute;
+  top: 320px;
+  left: 800px;
+}
+#figura3 {
+  position: absolute;
+  top: 1710px;
+  left: 0%;
+}
+#figura4 {
+  position: absolute;
+  top: 2880px;
+  right: 0%;
+}
+#figura5 {
+  position: absolute;
+  top: 4350px;
+  right: 200px;
+  z-index: 11;
+}
+.tamaño1 {
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-top: 100px solid rgba(201, 208, 216, 0.788);
+}
+.tamaño2 {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-right: 150px solid rgba(201, 208, 216, 0.788);
+  border-bottom: 150px solid transparent;
+}
+.tamaño3 {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-left: 200px solid rgba(201, 208, 216, 0.788);
+  border-bottom: 150px solid transparent;
+}
+.tamaño4 {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-right: 200px solid rgba(201, 208, 216, 0.788);
+  border-bottom: 150px solid transparent;
+}
+.tamaño5 {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid rgba(201, 208, 216, 0.788);
+}
+
+
+.material-icons { 
+  
+    padding: 1px 1px 7px 1px;
+    color: #f1cf0c; 
+    background-color: rgba(240, 197, 6, 0.116);
+}
+#iconsblue{
+    padding:  0px 5px 5px 5px ;
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.116);
+}
+#iconsblueBeneficios{
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.082);
+  padding:  0px 5px 5px 5px ;
+  color: blue;
+  background-color: rgba(0, 0, 255, 0.116);
+}
+
+#iconsContact{
+  font-size: 55px;;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.082);
+  padding:  0px 5px 5px 5px ;
+  color: blue;
+  background-color: rgba(0, 0, 255, 0.116);
+}
+#iconsTabla2 {
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.116);
+}
+
+.divi{
+
+ border-collapse: collapse;
+}
